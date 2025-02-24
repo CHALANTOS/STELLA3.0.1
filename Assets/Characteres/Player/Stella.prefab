@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6843314381859428517}
   - component: {fileID: 6397333244049082153}
   - component: {fileID: 9043971430343496636}
-  - component: {fileID: 4026885901682718782}
   m_Layer: 0
   m_Name: Stella
   m_TagString: Player
@@ -49,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f6e1a9109b950c4c89388a2353eac0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
+  walkSpeed: 7
 --- !u!114 &3418717661317170759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,24 +257,3 @@ CapsuleCollider2D:
   m_Offset: {x: -0.10677402, y: -0.058796786}
   m_Size: {x: 0.27487558, y: 0.4980706}
   m_Direction: 0
---- !u!95 &4026885901682718782
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3057011621819967353}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ea943366503082b48900e5ac1381962d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
