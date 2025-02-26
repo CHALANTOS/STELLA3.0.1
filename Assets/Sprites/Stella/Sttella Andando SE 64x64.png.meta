@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8cbd49ac08b61d3488c6006855d9fe01
+guid: 7308b28eac8368143a86d574548732cf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,10 +45,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 69
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sttella Andando SE_0
+      name: Sttella Andando SE 64x64_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 69
-        height: 44
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2158251a0de2c6647ad61e13c4ff5f71
-      internalID: -104298851
+      spriteID: a232b6d7dd8b7184e8be4b3b0f0f6982
+      internalID: 1829873833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sttella Andando SE_1
+      name: Sttella Andando SE 64x64_1
       rect:
         serializedVersion: 2
-        x: 69
+        x: 64
         y: 0
-        width: 69
-        height: 44
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b05152795ee9854098da2469e9f372f
-      internalID: -1732460836
+      spriteID: 64b19e3440e48c54281afc1d10cb4386
+      internalID: 1827944577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sttella Andando SE_2
+      name: Sttella Andando SE 64x64_2
       rect:
         serializedVersion: 2
-        x: 138
+        x: 128
         y: 0
-        width: 69
-        height: 44
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64b1943208636e844a8756a908b2722e
-      internalID: 1651020394
+      spriteID: f16b79bcc7e464344a2b4b45c3c31c06
+      internalID: -481129625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sttella Andando SE_3
+      name: Sttella Andando SE 64x64_3
       rect:
         serializedVersion: 2
-        x: 207
+        x: 192
         y: 0
-        width: 69
-        height: 44
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dee8732963bc884e937ade2e2404ebc
-      internalID: -374356213
+      spriteID: 0e8772fd62730b6478ece176446d8ab5
+      internalID: 796177841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sttella Andando SE_4
+      name: Sttella Andando SE 64x64_4
       rect:
         serializedVersion: 2
-        x: 276
+        x: 256
         y: 0
-        width: 69
-        height: 44
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b792360cae677fa43aa3f7722ecb908e
-      internalID: 322914856
+      spriteID: edba73b84f608bb45ac898ac5543ca10
+      internalID: 1895853110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sttella Andando SE_5
+      name: Sttella Andando SE 64x64_5
       rect:
         serializedVersion: 2
-        x: 345
+        x: 320
         y: 0
-        width: 69
-        height: 44
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee7926aec1575a64ba79d4640b85ad35
-      internalID: 1926712869
+      spriteID: cb76315da289a0c49951d494f1d0d3db
+      internalID: 1638030356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sttella Andando SE_6
+      name: Sttella Andando SE 64x64_6
       rect:
         serializedVersion: 2
-        x: 414
+        x: 384
         y: 0
-        width: 69
-        height: 44
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01db752b7431ce54eb93649b7e261e42
-      internalID: -1695677706
+      spriteID: 996defa6030b2704e9897f038ea0fa16
+      internalID: -1736940469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sttella Andando SE_7
+      name: Sttella Andando SE 64x64_7
       rect:
         serializedVersion: 2
-        x: 483
+        x: 448
         y: 0
-        width: 69
-        height: 44
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddf5bb9d2c770f14fbb978149923b495
-      internalID: -855989863
+      spriteID: 3d6761c7b675eab40a85a65ac38e1cef
+      internalID: -919184736
       vertices: []
       indices: 
       edges: []
@@ -327,14 +327,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sttella Andando SE_0: -104298851
-      Sttella Andando SE_1: -1732460836
-      Sttella Andando SE_2: 1651020394
-      Sttella Andando SE_3: -374356213
-      Sttella Andando SE_4: 322914856
-      Sttella Andando SE_5: 1926712869
-      Sttella Andando SE_6: -1695677706
-      Sttella Andando SE_7: -855989863
+      Sttella Andando SE 64x64_0: 1829873833
+      Sttella Andando SE 64x64_1: 1827944577
+      Sttella Andando SE 64x64_2: -481129625
+      Sttella Andando SE 64x64_3: 796177841
+      Sttella Andando SE 64x64_4: 1895853110
+      Sttella Andando SE 64x64_5: 1638030356
+      Sttella Andando SE 64x64_6: -1736940469
+      Sttella Andando SE 64x64_7: -919184736
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

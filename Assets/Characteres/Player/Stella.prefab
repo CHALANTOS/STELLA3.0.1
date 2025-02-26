@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6843314381859428517}
   - component: {fileID: 6397333244049082153}
   - component: {fileID: 9043971430343496636}
+  - component: {fileID: 662326422550130300}
   m_Layer: 0
   m_Name: Stella
   m_TagString: Player
@@ -49,6 +50,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 7
+  runSpeed: 0
+  _isMoving: 0
+  _isrunning: 0
 --- !u!114 &3418717661317170759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +142,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c53b1491-d370-4d9e-bc7e-1adb102ae1f3
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3908998003450680338}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnRun
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: feaeff01-e50b-4377-b886-cec23f91a1cc
+    m_ActionName: Player/Run[/Keyboard/leftShift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -184,12 +204,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -826264836, guid: 19e5025e04bd3c74ebaf796c4d95bf7d, type: 3}
+  m_Sprite: {fileID: 32643839, guid: 1531d518cef5bc742b454b06624f5393, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 0.6376812}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -254,6 +274,27 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.10677402, y: -0.058796786}
-  m_Size: {x: 0.27487558, y: 0.4980706}
+  m_Offset: {x: -0.109347366, y: -0.07102033}
+  m_Size: {x: 0.28002256, y: 0.5225178}
   m_Direction: 0
+--- !u!95 &662326422550130300
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3057011621819967353}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1567677e47b14aa4ba8e8ed9296842dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
