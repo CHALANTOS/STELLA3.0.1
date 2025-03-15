@@ -53,6 +53,7 @@ MonoBehaviour:
   runSpeed: 0
   _isMoving: 0
   _isrunning: 0
+  _isFacingRight: 1
 --- !u!114 &3418717661317170759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,8 +275,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.109347366, y: -0.07102033}
-  m_Size: {x: 0.28002256, y: 0.5225178}
+  m_Offset: {x: -0.0031524599, y: 0.0052604675}
+  m_Size: {x: 0.28301412, y: 0.537475}
   m_Direction: 0
 --- !u!95 &662326422550130300
 Animator:
