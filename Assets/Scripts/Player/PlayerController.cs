@@ -4,25 +4,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirection))]
 public class PlayerController : MonoBehaviour
 {
 
     public float walkSpeed;
     public float runSpeed;
+    public float airWalkSpeed;
+    public float jumpImpulse;
     Vector2 moveInput;
+    TouchingDirection touchingDirection;
 
-    public float CurrentMoveSpeed{get
+    public float CurrentMoveSpeed{
+    get
     {
-        if(IsMoving)
+        if(IsMoving && !touchingDirection.IsOnWall)
         {
-            if(IsRunning)
+            if(touchingDirection.IsGround)
             {
-                return runSpeed;
+                if(IsRunning)
+                {
+                    return runSpeed;
+                }
+                else
+                {
+                    return walkSpeed;
+                }
             }
             else
             {
-                return walkSpeed;
+                return airWalkSpeed;
             }
         }
         else
@@ -82,17 +93,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-    }
-
-    void Start()
-    {
-    
-    }
-
-
-    void Update()
-    {
-        
+        touchingDirection = GetComponent<TouchingDirection>();
     }
 
     private void FixedUpdate()
@@ -134,5 +135,13 @@ public class PlayerController : MonoBehaviour
             IsRunning = false;
         }
     }
-   
+    
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        if(context.started && touchingDirection.IsGround)
+        {
+            animator.SetTrigger(AnimationStrings.jump);
+            rb.velocity = new Vector2(rb.velocity.x, jumpImpulse); 
+        }
+    }
 }
