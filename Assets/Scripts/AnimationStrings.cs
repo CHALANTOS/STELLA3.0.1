@@ -10,4 +10,6 @@ internal class AnimationStrings : MonoBehaviour
 {
     internal static string isMoving = "isMoving";
     internal static string isRunning = "isRunning";
+    internal static string isGrounded = "isGrounded";
+    internal static string yVelocity = "yVelocity";
 }

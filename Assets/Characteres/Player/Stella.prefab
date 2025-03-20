@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6397333244049082153}
   - component: {fileID: 9043971430343496636}
   - component: {fileID: 662326422550130300}
+  - component: {fileID: 2522062497239966897}
   m_Layer: 0
   m_Name: Stella
   m_TagString: Player
@@ -275,8 +276,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0031524599, y: 0.0052604675}
-  m_Size: {x: 0.28301412, y: 0.537475}
+  m_Offset: {x: 0.002073606, y: 0.01107645}
+  m_Size: {x: 0.19939725, y: 0.53106916}
   m_Direction: 0
 --- !u!95 &662326422550130300
 Animator:
@@ -299,3 +300,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2522062497239966897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3057011621819967353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a5ac5347bea4b4b8b7d9550cbadc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  GroundDistance: 0.05
+  _isGrounded: 0
