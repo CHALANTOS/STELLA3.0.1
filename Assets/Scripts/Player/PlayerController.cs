@@ -18,28 +18,36 @@ public class PlayerController : MonoBehaviour
     public float CurrentMoveSpeed{
     get
     {
-        if(IsMoving && !touchingDirection.IsOnWall)
+        if (CanMove)
         {
-            if(touchingDirection.IsGround)
+        if(IsMoving && !touchingDirection.IsOnWall)
             {
-                if(IsRunning)
+                if(touchingDirection.IsGround)
                 {
-                    return runSpeed;
+                    if(IsRunning)
+                    {
+                        return runSpeed;
+                    }
+                    else
+                    {
+                        return walkSpeed;
+                    }
                 }
                 else
                 {
-                    return walkSpeed;
+                    return airWalkSpeed;
                 }
             }
             else
             {
-                return airWalkSpeed;
+                return 0;
             }
-        }
-        else
+        } else
         {
+            //movement locked
             return 0;
         }
+        
     }
     }
 
@@ -84,6 +92,12 @@ public class PlayerController : MonoBehaviour
     
     
     } }
+
+    public bool CanMove{ get
+        {
+            return animator.GetBool(AnimationStrings.canMove);
+        }
+    }
 
 
     Rigidbody2D rb;
@@ -138,7 +152,7 @@ public class PlayerController : MonoBehaviour
     
     public void OnJump(InputAction.CallbackContext context)
     {
-        if(context.started && touchingDirection.IsGround)
+        if(context.started && touchingDirection.IsGround && CanMove)
         {
             animator.SetTrigger(AnimationStrings.jump);
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse); 
