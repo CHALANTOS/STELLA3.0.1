@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6615671687076429745}
   - component: {fileID: 3878732792161171274}
   - component: {fileID: 8314574341189047650}
+  - component: {fileID: 6326664637123470527}
+  - component: {fileID: 7496233147912733060}
   m_Layer: 0
   m_Name: Lagarto Idle_0
   m_TagString: Untagged
@@ -161,3 +163,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5937a9ef111c9e4fabbe6ea5751bdf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkSpeed: 3
+  walkDirectionVector: {x: 0, y: 0}
+--- !u!114 &6326664637123470527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5457481640894214962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a5ac5347bea4b4b8b7d9550cbadc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  GroundDistance: 0.05
+  WallDistance: 0.2
+  CeilingDistance: 0.05
+  _isGrounded: 0
+  _isOnWall: 0
+  _isOnCeiling: 0
+--- !u!95 &7496233147912733060
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5457481640894214962}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 191ca56fef1a3d74195cab53a79ab542, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
