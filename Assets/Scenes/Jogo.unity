@@ -4751,43 +4751,6 @@ Transform:
   - {fileID: 1327967478}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2082122397 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5457481640894214962, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-  m_PrefabInstance: {fileID: 697552699632902457}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2082122398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082122397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67a5ac5347bea4b4b8b7d9550cbadc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  castFilter:
-    useTriggers: 0
-    useLayerMask: 1
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  GroundDistance: 0.05
-  WallDistance: 0.2
-  CeilingDistance: 0.05
-  _isGrounded: 0
-  _isOnWall: 0
-  _isOnCeiling: 0
 --- !u!1 &2121206194
 GameObject:
   m_ObjectHideFlags: 0
@@ -8752,13 +8715,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2579006495075010266, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
+      propertyPath: m_Size.x
+      value: 0.63780284
+      objectReference: {fileID: 0}
+    - target: {fileID: 2579006495075010266, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
+      propertyPath: m_Size.y
+      value: 0.51151466
+      objectReference: {fileID: 0}
+    - target: {fileID: 2579006495075010266, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.567562
+      objectReference: {fileID: 0}
+    - target: {fileID: 2579006495075010266, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.11897898
+      objectReference: {fileID: 0}
     - target: {fileID: 5457481640894214962, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
       propertyPath: m_Name
       value: Lagarto
-      objectReference: {fileID: 0}
-    - target: {fileID: 5457481640894214962, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6179764613172067972, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8800,25 +8775,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6326664637123470527, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-      propertyPath: castFilter.layerMask.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 6615671687076429745, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 8314574341189047650, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-      propertyPath: walkSpeed
-      value: 3
+      propertyPath: walkStopRate
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5457481640894214962, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 2082122398}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
 --- !u!1001 &805973034307760607
 PrefabInstance:

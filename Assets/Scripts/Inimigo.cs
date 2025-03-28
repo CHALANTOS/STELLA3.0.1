@@ -7,8 +7,11 @@ using UnityEngine;
 public class Inimigo : MonoBehaviour
 {
     public float walkSpeed = 3f;
+    public float walkStopRate = 0.05f;
+    public DetectionZone AtackZone;
     Rigidbody2D rb;
     TouchingDirection touchingDirection;
+    Animator animator;
     public enum WalkableDirection {Right, Left};
     private WalkableDirection _walkDirection;
     public Vector2 walkDirectionVector = Vector2.right;
@@ -31,9 +34,36 @@ public class Inimigo : MonoBehaviour
             _walkDirection = value; }
         
     }
+
+    public bool _HasTarget = false;
+    public bool HasTarget { 
+        get { return _HasTarget; }
+        private set
+        {
+            _HasTarget = value;
+            animator.SetBool(AnimationStrings.HasTarget, value);
+        }
+    }
+
+    public bool canMove
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.canMove);
+        }
+    }
+
+
+
     private void Awake(){
         rb = GetComponent<Rigidbody2D>();
         touchingDirection = GetComponent<TouchingDirection>();
+        animator = GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        HasTarget = AtackZone.DetectColliders.Count > 0;
     }
 
     private void FixedUpdate(){
@@ -41,7 +71,14 @@ public class Inimigo : MonoBehaviour
         {
             FlipDirection();
         }
-        rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
+        if(canMove)
+        {
+            rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);
+        }
     }
 
     private void FlipDirection()

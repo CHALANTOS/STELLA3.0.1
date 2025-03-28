@@ -17,4 +17,5 @@ internal class AnimationStrings : MonoBehaviour
     internal static string isOnCeiling = "isOnCeiling";
     internal static string attackTrigger = "attack";
     internal static string canMove = "canMove";
+    internal static string HasTarget = "HasTarget";
 } 
