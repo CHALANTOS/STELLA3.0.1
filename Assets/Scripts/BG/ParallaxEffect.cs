@@ -35,10 +35,13 @@ public class ParallaxEffect : MonoBehaviour
 
     void Update()
     {
-        // When the target moves, move the parallax object the same distance times a multiplayer
-        Vector2 newPosition = startingPosition + camMoveSinceStart * parallaxFactor;
+        if(followTarget != null)
+        {
+            // When the target moves, move the parallax object the same distance times a multiplayer
+            Vector2 newPosition = startingPosition + camMoveSinceStart * parallaxFactor;
 
-        // The X/Y position changes based on target travel speed times the parallax factor, but Z stays consistent
-        transform.position = new Vector3(newPosition.x, newPosition.y, startingZ);
+            // The X/Y position changes based on target travel speed times the parallax factor, but Z stays consistent
+            transform.position = new Vector3(newPosition.x, newPosition.y, startingZ);
+        }
     }
 }

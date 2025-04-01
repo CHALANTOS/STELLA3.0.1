@@ -9,14 +9,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6930828254574346624}
-  - component: {fileID: 3908998003450680338}
   - component: {fileID: 3418717661317170759}
   - component: {fileID: 6843314381859428517}
   - component: {fileID: 6397333244049082153}
   - component: {fileID: 9043971430343496636}
   - component: {fileID: 662326422550130300}
+  - component: {fileID: 3908998003450680338}
   - component: {fileID: 2522062497239966897}
-  m_Layer: 0
+  - component: {fileID: 3006697574237342194}
+  m_Layer: 7
   m_Name: Stella
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -38,25 +39,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3908998003450680338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3057011621819967353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f6e1a9109b950c4c89388a2353eac0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 7
-  runSpeed: 0
-  airWalkSpeed: 3
-  jumpImpulse: 10
-  _isMoving: 0
-  _isrunning: 0
-  _isFacingRight: 1
 --- !u!114 &3418717661317170759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,8 +288,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.002073606, y: 0.01107645}
-  m_Size: {x: 0.19939725, y: 0.53106916}
+  m_Offset: {x: 0.0020736067, y: -0.0208628}
+  m_Size: {x: 0.19939725, y: 0.5097768}
   m_Direction: 0
 --- !u!95 &662326422550130300
 Animator:
@@ -330,6 +312,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3908998003450680338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3057011621819967353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6e1a9109b950c4c89388a2353eac0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 7
+  runSpeed: 0
+  airWalkSpeed: 3
+  jumpImpulse: 10
+  _isMoving: 0
+  _isrunning: 0
+  _isFacingRight: 1
 --- !u!114 &2522062497239966897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,14 +345,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   castFilter:
     useTriggers: 0
-    useLayerMask: 0
+    useLayerMask: 1
     useDepth: 0
     useOutsideDepth: 0
     useNormalAngle: 0
     useOutsideNormalAngle: 0
     layerMask:
       serializedVersion: 2
-      m_Bits: 0
+      m_Bits: 64
     minDepth: 0
     maxDepth: 0
     minNormalAngle: 0
@@ -362,3 +363,20 @@ MonoBehaviour:
   _isGrounded: 0
   _isOnWall: 0
   _isOnCeiling: 0
+--- !u!114 &3006697574237342194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3057011621819967353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bee23cad008ddc4ab1c0a1128e1000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 100
+  _isAlive: 1
+  isInvincible: 0
+  invicibilityTime: 0.25

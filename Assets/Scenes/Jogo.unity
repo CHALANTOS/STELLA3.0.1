@@ -320,30 +320,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1653378193}
   followTarget: {fileID: 369017643}
---- !u!1 &245151279 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3057011621819967353, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
-  m_PrefabInstance: {fileID: 805973034307760607}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &369017643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6930828254574346624, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
   m_PrefabInstance: {fileID: 805973034307760607}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &369017651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245151279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bee23cad008ddc4ab1c0a1128e1000d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isAlive: 1
-  isInvincible: 0
 --- !u!1 &617245021
 GameObject:
   m_ObjectHideFlags: 3
@@ -8734,22 +8715,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2579006495075010266, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-      propertyPath: m_Size.x
-      value: 0.63780284
-      objectReference: {fileID: 0}
-    - target: {fileID: 2579006495075010266, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-      propertyPath: m_Size.y
-      value: 0.51151466
-      objectReference: {fileID: 0}
-    - target: {fileID: 2579006495075010266, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.567562
-      objectReference: {fileID: 0}
-    - target: {fileID: 2579006495075010266, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.11897898
-      objectReference: {fileID: 0}
     - target: {fileID: 5457481640894214962, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
       propertyPath: m_Name
       value: Lagarto
@@ -8794,10 +8759,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8314574341189047650, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
-      propertyPath: walkStopRate
-      value: 0.05
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8811,25 +8772,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2522062497239966897, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
-      propertyPath: castFilter.useLayerMask
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2522062497239966897, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
-      propertyPath: castFilter.layerMask.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
     - target: {fileID: 3057011621819967353, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
       propertyPath: m_Name
       value: Stella
-      objectReference: {fileID: 0}
-    - target: {fileID: 3057011621819967353, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6843314381859428517, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930828254574346624, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8871,25 +8816,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9043971430343496636, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
-      propertyPath: m_Size.y
-      value: 0.5097768
-      objectReference: {fileID: 0}
-    - target: {fileID: 9043971430343496636, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0020736067
-      objectReference: {fileID: 0}
-    - target: {fileID: 9043971430343496636, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.0208628
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3057011621819967353, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 369017651}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ab58ea3c2dd3f34fbb46cb3ba2d164a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

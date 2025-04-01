@@ -5,6 +5,7 @@ using UnityEngine;
 public class Damageble : MonoBehaviour
 {
     Animator animator;
+    [SerializeField]
     private int _maxHealth = 100;
 
 
@@ -18,6 +19,7 @@ public class Damageble : MonoBehaviour
         }
     }
 
+    [SerializeField]
     private int _health = 100;
 
 
@@ -40,17 +42,20 @@ public class Damageble : MonoBehaviour
     private float timeSinceHit = 0;
 
     public bool IsAlive{
-        get{
+        get
+        {
             return _isAlive;
         }
-        set{
+        set
+        {
             _isAlive = value;
             animator.SetBool(AnimationStrings.isAlive, value);
             Debug.Log ("IsAlive set" + value);
         }
     }
 
-    private void Awake(){
+    private void Awake()
+    {
         animator = GetComponent<Animator>();
     }
 
