@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirection))]
 public class PlayerController : MonoBehaviour
 {
-
+    Damageble damage;
     public float walkSpeed;
     public float runSpeed;
     public float airWalkSpeed;
@@ -161,9 +161,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if(context.started)
+        if (context.started)
         {
             animator.SetTrigger(AnimationStrings.attackTrigger);
+
+
         }
+
     }
 }

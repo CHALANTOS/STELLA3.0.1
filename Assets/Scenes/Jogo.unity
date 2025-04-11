@@ -344,6 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isAlive: 1
   isInvincible: 0
+  invicibilityTime: 0.25
 --- !u!1 &617245021
 GameObject:
   m_ObjectHideFlags: 3
@@ -8798,7 +8799,8 @@ PrefabInstance:
       propertyPath: walkStopRate
       value: 0.05
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8048442892832649658, guid: e7a8ed2f3839ccf48a28859debf16f53, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

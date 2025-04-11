@@ -65,7 +65,9 @@ public class Damageble : MonoBehaviour
             }
             timeSinceHit += Time.deltaTime;
         }
-        Hit(10);
+
+
+
 
     }
 
@@ -74,6 +76,7 @@ public class Damageble : MonoBehaviour
         {
             Health -= damage;
             isInvincible = true;
+            Debug.Log("dano");
         }
     }
 }
