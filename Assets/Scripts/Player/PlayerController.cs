@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirection))]
 public class PlayerController : MonoBehaviour
 {
-    Damageble damage;
+    Damageable damage;
     public float walkSpeed;
     public float runSpeed;
     public float airWalkSpeed;
@@ -99,6 +99,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public bool IsAlive
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.isAlive);
+        }
+    }
 
     Rigidbody2D rb;
     Animator animator;
@@ -121,9 +128,16 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
 
+        if(IsAlive)
+        {
         IsMoving = moveInput != Vector2.zero;
 
         SetFacingDirection(moveInput);
+        } 
+        else
+        {
+            IsMoving = false;
+        }
     }
 
     private void SetFacingDirection(Vector2 moveInput)

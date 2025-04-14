@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5b306c5aa4e59574cbc04bd93d7f28b3
+guid: 7a8fb204e4e704c4d909169f2672ee81
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -149,15 +149,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stella Atacando SE 64x64_0
+      name: Stella Caindo SE_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 16
         y: 11
-        width: 27
-        height: 42
+        width: 33
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -171,22 +171,22 @@ TextureImporter:
         - {x: -32, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 7fb2248381042ad438542f89d134f0b7
-      internalID: -570573959
+      spriteID: 12c36aedfcbe5db468288365e686b83c
+      internalID: 575327906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stella Atacando SE 64x64_1
+      name: Stella Caindo SE_1
       rect:
         serializedVersion: 2
-        x: 71
+        x: 73
         y: 11
-        width: 30
-        height: 38
+        width: 41
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -200,109 +200,22 @@ TextureImporter:
         - {x: -32, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 6ffea33890e49ee4b9727e5c24aaf5a0
-      internalID: 1112033170
+      spriteID: 9d98d3aebbe17e34cbb45373605fdd60
+      internalID: -2018711596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stella Atacando SE 64x64_2
+      name: Stella Caindo SE_2
       rect:
         serializedVersion: 2
-        x: 137
-        y: 11
-        width: 28
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      physicsShape:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff2da2716ccbdd64ba9d9c9137cda3f2
-      internalID: -1295470559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stella Atacando SE 64x64_3
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 11
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      physicsShape:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86d78ddd807b0d1438a07ede524c6a9e
-      internalID: 1345222722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stella Atacando SE 64x64_4
-      rect:
-        serializedVersion: 2
-        x: 269
-        y: 11
-        width: 27
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      physicsShape:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      tessellationDetail: 0
-      bones: []
-      spriteID: c54548b531f5e044ca5d3fa57700bb18
-      internalID: 637283044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stella Atacando SE 64x64_5
-      rect:
-        serializedVersion: 2
-        x: 331
+        x: 136
         y: 11
         width: 48
-        height: 40
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -316,22 +229,22 @@ TextureImporter:
         - {x: -32, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: d40eb9a7d114c7f409231f365bdbd069
-      internalID: -203061423
+      spriteID: d319804a66185ad449d4adcd6fd0aa6c
+      internalID: 101145549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stella Atacando SE 64x64_6
+      name: Stella Caindo SE_3
       rect:
         serializedVersion: 2
-        x: 396
+        x: 200
         y: 11
-        width: 50
-        height: 39
+        width: 51
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -345,138 +258,22 @@ TextureImporter:
         - {x: -32, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 4e74d74d8f0a84b418ad42e790e5fbd4
-      internalID: 2129863504
+      spriteID: 492bbbe0e54033c40894166e464c799c
+      internalID: 735579662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stella Atacando SE 64x64_7
+      name: Stella Caindo SE_4
       rect:
         serializedVersion: 2
-        x: 466
-        y: 11
-        width: 37
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      physicsShape:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      tessellationDetail: 0
-      bones: []
-      spriteID: c38a17b779427d04cb013dee1f7e632b
-      internalID: 1396362998
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stella Atacando SE 64x64_8
-      rect:
-        serializedVersion: 2
-        x: 530
-        y: 11
-        width: 24
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      physicsShape:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 921668ad4d8f8814983f4bac26c6083f
-      internalID: 1599071254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stella Atacando SE 64x64_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 11
-        width: 53
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      physicsShape:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7fbb761324091444bcc1f622b6d6a59
-      internalID: -141031222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stella Atacando SE 64x64_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 11
-        width: 49
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      physicsShape:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6374508cb99a36429c12087516f75d2
-      internalID: -1965897519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stella Atacando SE 64x64_11
-      rect:
-        serializedVersion: 2
-        x: 704
+        x: 264
         y: 11
         width: 48
-        height: 40
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -490,8 +287,8 @@ TextureImporter:
         - {x: -32, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 8c8e0d947fb8af94788f9c756428da0c
-      internalID: -759263742
+      spriteID: 8d05b52cae4b56a4185ef290f61288de
+      internalID: 349043840
       vertices: []
       indices: 
       edges: []
@@ -507,19 +304,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Stella Atacando SE 64x64 1_0: 804622750
-      Stella Atacando SE 64x64_0: -570573959
-      Stella Atacando SE 64x64_1: 1112033170
-      Stella Atacando SE 64x64_10: -1965897519
-      Stella Atacando SE 64x64_11: -759263742
-      Stella Atacando SE 64x64_2: -1295470559
-      Stella Atacando SE 64x64_3: 1345222722
-      Stella Atacando SE 64x64_4: 637283044
-      Stella Atacando SE 64x64_5: -203061423
-      Stella Atacando SE 64x64_6: 2129863504
-      Stella Atacando SE 64x64_7: 1396362998
-      Stella Atacando SE 64x64_8: 1599071254
-      Stella Atacando SE 64x64_9: -141031222
+      Stella Caindo SE_0: 575327906
+      Stella Caindo SE_1: -2018711596
+      Stella Caindo SE_2: 101145549
+      Stella Caindo SE_3: 735579662
+      Stella Caindo SE_4: 349043840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

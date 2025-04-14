@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Damageble : MonoBehaviour
+public class Damageable : MonoBehaviour
 {
     Animator animator;
     private int _maxHealth = 100;
@@ -18,10 +18,10 @@ public class Damageble : MonoBehaviour
         }
     }
 
-    private int _health = 100;
+    [SerializeField] private int _health = 100;
 
 
-    public int Health{
+     public int Health{
         get{
             return _health;
         }
@@ -65,18 +65,15 @@ public class Damageble : MonoBehaviour
             }
             timeSinceHit += Time.deltaTime;
         }
-
-
-
-
     }
 
-    public void Hit(int damage){
+    public void Hit(int damage)
+    {
         if(IsAlive && !isInvincible)
         {
             Health -= damage;
             isInvincible = true;
-            Debug.Log("dano");
         }
-    }
+        Hit(10);
+    } 
 }
